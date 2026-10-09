@@ -13,6 +13,14 @@ npm run dev
 
 Create a production build with `npm run build`; preview it with `npm run preview`.
 
+## Deploy on Render
+
+This repository includes a Render Blueprint for the static Vite app. In the
+[Render dashboard](https://dashboard.render.com/), create a new Blueprint
+Instance, connect `reddyboy431-alt/problemsolvers_digital_risk`, and apply the
+`brandshield-ai` service. Render runs `npm ci && npm run build`, publishes
+`dist`, and rewrites application routes to `index.html`.
+
 ## Prototype scope
 
 - Editable brand profile: official logo URL, social accounts, apps, publishers, and identifiers
