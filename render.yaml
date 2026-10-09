@@ -2,7 +2,6 @@ services:
   - type: web
     name: brandshield-ai
     runtime: static
-    plan: free
     buildCommand: npm ci && npm run build
     staticPublishPath: ./dist
     routes:
